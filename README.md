@@ -1,10 +1,8 @@
 <p align="center">
   <a href=https://drive.google.com/drive/u/2/folders/0B3SjqsAKahBWd2hpeVdxYUNIUTQ>
-    <img src="https://raw.githubusercontent.com/whereswelly-govhack/wheres-welly/master/imgs/wswLogo_s.jpg" width=90 height=90>
+    <img src="https://raw.githubusercontent.com/whereswelly-govhack/wheres-welly/master/imgs/wswLogo_s.jpg" width=120 height=120>
   </a>
-
   <h3 align="center">Where's Welly</h3>
-
   <p align="center">
     Awesome travel time visualisation of Wellington, courtesy of Govhack 2017.
     <br>
@@ -18,9 +16,6 @@
 </p>
 
 <br>
-
-
-Check out our google drive at: https://drive.google.com/drive/folders/0B3SjqsAKahBWd2hpeVdxYUNIUTQ?usp=sharing
 
 # For Users
 Wellington is a complicated city. Threaded with narrow, winding roads and tunnels looping through hilly terrain, it can be difficult for new-comers (and old timers!) to wrap their heads around the cities, suburbs and the connections inbetween. 
