@@ -6,7 +6,7 @@
   <p align="center">
     Awesome travel time visualisation of Wellington, courtesy of Govhack 2017.
     <br>
-    <a href="https://drive.google.com/drive/u/2/folders/0B3SjqsAKahBWd2hpeVdxYUNIUTQ">Google Drive</a>
+    <a href="https://drive.google.com/drive/u/2/folders/0B3SjqsAKahBWd2hpeVdxYUNIUTQ">Check out our Google Drive</a>
     &middot;
     <a href="https://youtube.com">Watch Our Youtube Video</a>
     &middot;
