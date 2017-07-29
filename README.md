@@ -2,7 +2,7 @@
   <a href=https://drive.google.com/drive/u/2/folders/0B3SjqsAKahBWd2hpeVdxYUNIUTQ>
     <img src="https://raw.githubusercontent.com/whereswelly-govhack/wheres-welly/master/imgs/wswLogo_s.jpg" width=120 height=120>
   </a>
-  <h3 align="center">Where's Welly</h3>
+  <h2 align="center">Where's Welly</h2>
   <p align="center">
     Awesome travel time visualisation of Wellington, courtesy of Govhack 2017.
     <br>
@@ -22,7 +22,7 @@
 - [Introduction](#introduction)
 - [For Developers](#developers)
 
-# Introduction
+## Introduction
 Wellington is a complicated city. Threaded with narrow, winding roads and tunnels looping through hilly terrain, it can be difficult for new-comers (and old timers!) to wrap their heads around the cities, suburbs and the connections inbetween. 
 
 Where's Wally is a tool to help current and prospective Wellingtonians plan where to live and explore in the windy city. If you are planning on moving in and want somewhere close to work, you can use Where's Wally to help you find where is best for you.
