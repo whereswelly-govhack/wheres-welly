@@ -31,9 +31,8 @@ Where's Wally is a tool to help current and prospective Wellingtonians plan wher
 
 At [Where's Wally](http://mapsnz.link/index.php?id=19), users can mark their work and home locations, and gain useful statistics about travel times by vehicle, by foot as well as recent rent statistics, courtesy of MBIE. Regions are mapped to indicate 5, 10 and 15 minute travel time from the work location.
 
+To take the example below, Khandallah (marked "W" on the map) might look close on the map, but in terms of travel time you would be better of further away in Johnsonville or Petone!
 ![imagetitle](./imgs/khandallah.png?raw=true "Optional Title")
-
-We set out to save people from the pain we’ve experienced when buying, renting and booking accommodation in Wellington.
 
 [Photo of diagrams on the board and us working]
 
