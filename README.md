@@ -30,19 +30,25 @@ Where's Wally is a tool to help current and prospective Wellingtonians plan wher
 
 ## Demonstration
 
-At [Where's Wally](http://mapsnz.link/index.php?id=19), users can mark their work and home locations, and gain useful statistics about travel times by vehicle, by foot as well as recent rent statistics, courtesy of MBIE. Regions are mapped to indicate 5, 10 and 15 minute travel time from the work location.
+At [Where's Welly](http://mapsnz.link/index.php?id=19), users can mark their work and home locations, and gain useful statistics about travel times by vehicle, by foot as well as recent rent statistics, courtesy of MBIE. Regions are mapped to indicate 5, 10 and 15 minute travel time from the work location.
 
 ### Looking for Home
-Users with a fixed home or school location who are looking for work, can set their markers like this. Khandallah (marked "H" on the map) might look close on the map, but in terms of travel time you would be better of further away.
+Users with a fixed work location who are looking for where to live can set their markers like this. Khandallah (marked "H" on the map) might look close on the map, but in terms of travel time you would be better of further away.
 
-Where's Welly also calculates the following:
+[Where's Welly](http://mapsnz.link/index.php?id=19) also calculates the following:
 - Travel time by foot, bicycle or vehicle
 - Basic accomodation, fuel and parking costs for getting to and from your work location
 
 ![imagetitle](./imgs/khandallah.png?raw=true "Optional Title")
 
 ### Looking for Work
+Users with a fixed home or school location who are looking for work, can set their markers like this. Khandallah (marked "H" on the map) might look close on the map, but in terms of travel time you would be better of further away.
 
+[Where's Welly](http://mapsnz.link/index.php?id=19) also calculates the following:
+- Travel time by foot, bicycle or vehicle
+- Basic accomodation, fuel and parking costs for getting to and from your work location
+
+![imagetitle](./imgs/khandallah.png?raw=true "Optional Title")
 
 ### Cost Example
 
