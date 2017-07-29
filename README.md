@@ -42,16 +42,11 @@ Users with a fixed work location who are looking for where to live can set their
 ![imagetitle](./imgs/khandallah.png?raw=true "Optional Title")
 
 ### Looking for Work
-Users with a fixed home or school location who are looking for work in Wellington can set their markers like this.
+For users with a fixed home or school location who are looking for work in Wellington can set their markers like this. This way, the tool will tell you which parts of Wellington are most accessible (and cheap!) from where you live.
 
-[Where's Welly](http://mapsnz.link/index.php?id=19) also calculates the following:
-- Travel time by foot, bicycle or vehicle
-- Basic accomodation, fuel and parking costs for getting to and from your work location
-
-![imagetitle](./imgs/alicetown.png?raw=true "Optional Title")
+![imagetitle](./imgs/petone.png?raw=true "Optional Title")
 
 ### Cost Example
-
 
 We love Wellington [photo of hat]  but it’s weird.[Wellington is Weird board on video]
 
