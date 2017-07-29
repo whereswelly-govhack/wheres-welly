@@ -1,16 +1,39 @@
-# wheres-welly
-Awesome travel time visualisation of Wellington, courtesy of Govhack 2017.
+<p align="center">
+  <a href=https://drive.google.com/drive/u/2/folders/0B3SjqsAKahBWd2hpeVdxYUNIUTQ>
+    <img src="https://raw.githubusercontent.com/whereswelly-govhack/wheres-welly/master/imgs/wswLogo_s.jpg" width=72 height=72>
+  </a>
+
+  <h3 align="center">Where's Welly</h3>
+
+  <p align="center">
+    Awesome travel time visualisation of Wellington, courtesy of Govhack 2017.
+    <br>
+    <a href="https://drive.google.com/drive/u/2/folders/0B3SjqsAKahBWd2hpeVdxYUNIUTQ"><strong>Explore Where's Welly Google Drive &raquo;</strong></a>
+<--
+    <br>
+    <br>
+    <a href="https://themes.getbootstrap.com">Bootstrap Themes</a>
+    &middot;
+    <a href="https://jobs.getbootstrap.com">Job Board</a>
+    &middot;
+    <a href="https://blog.getbootstrap.com">Blog</a>
+-->
+  </p>
+</p>
+
+<br>
+
 
 Check out our google drive at: https://drive.google.com/drive/folders/0B3SjqsAKahBWd2hpeVdxYUNIUTQ?usp=sharing
 
-# For users
+# For Users
 Wellington is a complicated city. Threaded with narrow, winding roads and tunnels looping through hilly terrain, it can be difficult for new-comers (and old timers!) to wrap their heads around the cities, suburbs and the connections inbetween. 
 
 Where's Wally is a tool to help current and prospective Wellingtonians plan where to live and explore in the windy city. If you are planning on moving in for work, and need somewhere close to the CBD, you can use Where's Wally to help you find where is best for you.
 
 ![imagetitle](./imgs/Welly_CBD.PNG?raw=true "Optional Title")
 
-We set out to save people from the pain we’ve experienced when buying, renting and booking accommodation in Wellington.  
+We set out to save people from the pain we’ve experienced when buying, renting and booking accommodation in Wellington.
 
 [Photo of diagrams on the board and us working]
 
