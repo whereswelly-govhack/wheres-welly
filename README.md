@@ -27,7 +27,7 @@ Wellington is a complicated city. Threaded with narrow, winding roads and tunnel
 
 Where's Wally is a tool to help current and prospective Wellingtonians plan where to live and explore in the windy city. If you are planning on moving in and want somewhere close to work, you can use Where's Wally to help you find where is best for you.
 
-![imagetitle](./imgs/khandallah.PNG?raw=true "Optional Title")
+![imagetitle](./imgs/khandallah.png?raw=true "Optional Title")
 
 We set out to save people from the pain we’ve experienced when buying, renting and booking accommodation in Wellington.
 
