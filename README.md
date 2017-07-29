@@ -20,12 +20,16 @@
 ## Table of contents
 
 - [Introduction](#introduction)
-- [For Developers](#developers)
+- [Demonstration](#demonstration)
 
 ## Introduction
 Wellington is a complicated city. Threaded with narrow, winding roads and tunnels looping through hilly terrain, it can be difficult for new-comers (and old timers!) to wrap their heads around the cities, suburbs and the connections inbetween.
 
 Where's Wally is a tool to help current and prospective Wellingtonians plan where to live and explore in the windy city. If you are planning on moving in and want somewhere close to work, you can use Where's Wally to help you find where is best for you.
+
+## Demonstration
+
+At [Where's Wally](http://mapsnz.link/index.php?id=19), users can mark their work and home locations, and gain useful statistics about travel times by vehicle, by foot as well as recent rent statistics, courtesy of MBIE. Regions are mapped to indicate 5, 10 and 15 minute travel time from the work location.
 
 ![imagetitle](./imgs/khandallah.png?raw=true "Optional Title")
 
