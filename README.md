@@ -6,6 +6,9 @@
   <p align="center">
     Awesome travel time visualisation of Wellington, courtesy of Govhack 2017.
     <br>
+    <a href="https://whereswelly-govhack.github.io/"><strong>Visit our Website &raquo;</strong></a>
+    <br>
+    <br>
     <a href="https://drive.google.com/drive/u/2/folders/0B3SjqsAKahBWd2hpeVdxYUNIUTQ">Check out our Google Drive</a>
     &nbsp; &middot; &nbsp;
     <a href="https://youtube.com">Watch Our Youtube Video</a>
@@ -21,6 +24,8 @@
 
 - [Introduction](#introduction)
 - [Demonstration](#demonstration)
+  - [Looking for Home](#lookingforhome)
+  - [Looking for Work](#lookingforwork)
 - [For Developers](#for-developers)
 
 *Where's Welly is a tool for understanding where in the Well you are.*
@@ -47,7 +52,9 @@ Users with a fixed work location who are looking for where to live can set their
 
 It is also possible to plot regions based on walking distance. If you simply want to take a walk and see how far is too far, Where's Wally will help you do that too.
 
-![imagetitle](./imgs/hataitai.png?raw=true "Hataitai Example")
+<p align="center">
+  <img src="https://raw.githubusercontent.com/whereswelly-govhack/wheres-welly/master/imgs/hataitai_small.png">
+</p>
 
 ### Looking for Work
 For users with a fixed home or school location who are looking for work in Wellington can set their markers like this. This way, the tool will tell you which parts of Wellington are most accessible (and cheap!) from where you live.
