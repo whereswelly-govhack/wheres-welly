@@ -6,7 +6,7 @@
   <p align="center">
     Awesome travel time visualisation of Wellington, courtesy of Govhack 2017.
     <br>
-    <a href="https://whereswelly-govhack.github.io/"><strong>Use the tool at our website</strong></a> &raquo;
+    <a ><strong>Try the tool at https://whereswelly-govhack.github.io/</strong> &raquo;</a>
     <br>
     <br>
     <a href="https://drive.google.com/drive/u/2/folders/0B3SjqsAKahBWd2hpeVdxYUNIUTQ">Check out our Google Drive</a>
@@ -92,7 +92,7 @@ Many thanks to the HERE team, our data contributors, including the folks at data
 ## Creators
 
 **Carla Morris**
-- Documhttps://www.linkedin.com/in/rachelprosser/entation, website design and concept work
+- Documentation, website design and concept work
 
 **Caleb Moses**
 - Data crunching and GIS work
