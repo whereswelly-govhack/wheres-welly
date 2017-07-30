@@ -27,6 +27,7 @@
   - [Looking for Home](#looking-for-home)
   - [Looking for Work](#looking-for-work)
 - [For Developers](#for-developers)
+  - [Datasets](#datasets)
 - [Future Goals](#future-goals)
 - [Creators](#creators)
 
@@ -64,6 +65,15 @@ For users with a fixed home or school location who are looking for work in Welli
 Where's Wally was developed in JavaScript using the [HERE API](https://developer.here.com/), and a considerable amount of open government data, provided by [Stats NZ](https://stats.govt.nz), [Ministry of Business, Innovation and Employment](http://www.mbie.govt.nz/) (MBIE).
 
 The source code is provided here with a Something-or-other License. Our datasets are also provided for the benefit of developers as well. They have been collected from various open data sources, and are in /data in raw and edited form.
+
+### Datasets
+A more detailed breakdown of the datasets used is here:
+- HERE API
+  - Mapping System
+- Stats NZ
+  - New Zealand regional and area unit maps
+- MBIE
+  - Median rental costs by area unit
 
 ## Future Goals
 Future development goals include:
