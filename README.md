@@ -35,7 +35,7 @@
 ## Introduction
 Wellington is a complicated city. Threaded with narrow, winding roads and tunnels looping through hilly terrain, it can be difficult for new-comers (and old timers!) to wrap their heads around the cities, suburbs and the connections inbetween.
 
-Where's Wally is a tool to help current and prospective Wellingtonians plan where to live and explore in the windy city. If you are planning on moving in and want somewhere close to work, you can use Where's Wally to help you find where is best for you.
+Where's Welly is a tool to help current and prospective Wellingtonians plan where to live and explore in the windy city. If you are planning on moving in and want somewhere close to work, you can use Where's Welly to help you find where is best for you.
 
 ## Demonstration
 
@@ -50,7 +50,7 @@ Users with a fixed work location who are looking for where to live can set their
 
 ![imagetitle](./imgs/khandallah.png?raw=true "Optional Title")
 
-It is also possible to plot regions based on walking distance. If you simply want to take a walk and see how far is too far, Where's Wally will help you do that too.
+It is also possible to plot regions based on walking distance. If you simply want to take a walk and see how far is too far, Where's Welly will help you do that too.
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/whereswelly-govhack/wheres-welly/master/imgs/hataitai_small.png">
@@ -63,7 +63,7 @@ For users with a fixed home or school location who are looking for work in Welli
 
 ## For Developers
 
-Where's Wally was developed in JavaScript using the [HERE API](https://developer.here.com/), and a considerable amount of open government data, provided by [Stats NZ](https://stats.govt.nz), [Ministry of Business, Innovation and Employment](http://www.mbie.govt.nz/) (MBIE).
+Where's Welly was developed in JavaScript using the [HERE API](https://developer.here.com/), and a considerable amount of open government data, provided by [Stats NZ](https://stats.govt.nz), [Ministry of Business, Innovation and Employment](http://www.mbie.govt.nz/) (MBIE).
 
 The source code is provided here with a Something-or-other License. Our datasets are also provided for the benefit of developers as well. They have been collected from various open data sources, and are in /data in raw and edited form.
 
