@@ -70,9 +70,9 @@ The source code is provided here with a Something-or-other License. Our datasets
 A more detailed breakdown of the datasets used is here:
 - [HERE API](https://developer.here.com/)
   - Mapping System and iso-chrones
-- [Stats NZ](https://stats.govt.nz)
+- [Stats NZ](http://m.stats.govt.nz/browse_for_stats/Maps_and_geography/Geographic-areas/digital-boundary-files.aspx)
   - New Zealand regional and area unit maps
-- [Ministry of Business, Innovation and Employment](http://www.mbie.govt.nz/)
+- [Ministry of Business, Innovation and Employment](http://www.mbie.govt.nz/info-services/housing-property/sector-information-and-statistics/rental-bond-data)
   - Median rental costs by area unit
 - [Education Counts](http://www.educationcounts.govt.nz/data-services/directories/list-of-nz-schools)
   - NZ School location data + additional info
@@ -85,7 +85,6 @@ Future development goals include:
 - Adjusting the scale to match commuting preferences
 - Integrating with existing rental and house sales websites so that their information is more useful. 
 
-
 ## Creators
 **Mark Otto**
 
@@ -96,13 +95,3 @@ Future development goals include:
 
 - <https://twitter.com/fat>
 - <https://github.com/fat>
-
-Our tool also can help with:
-Visitors to Wellington booking their accommodation [ask backpacker to use outside station
-Renters new to town who don’t have a car
-Retirees wanting to live where they don’t have to drive [
-Planning exercise routes [someone dressed for jogging]
-And in law enforcement [cops and robbers?]
-
-
-
