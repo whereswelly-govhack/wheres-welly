@@ -95,7 +95,7 @@ Many thanks to the HERE team, our data contributors, including the folks at data
 - Documentation, website design and concept work
 
 **Caleb Moses**
-- Preliminary data crunching
+- Data crunching and GIS work
 - <https://www.linkedin.com/in/caleb-moses-301974a6>
 - <https://github.com/mathematiguy>
 
@@ -112,7 +112,7 @@ Many thanks to the HERE team, our data contributors, including the folks at data
 
 **Ian Wang**
 - Server launch and development
-- Logo & images for vedio
+- Logo & images for vidio
 
 **Jin Xie**
-- researching APIs
+- Researching APIs
