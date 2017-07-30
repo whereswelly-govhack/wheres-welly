@@ -27,8 +27,8 @@
   - [Looking for Home](#looking-for-home)
   - [Looking for Work](#looking-for-work)
 - [For Developers](#for-developers)
-- [Creators](#creators)
 - [Future Goals](#future-goals)
+- [Creators](#creators)
 
 ## Introduction
 Wellington is a complicated city. Threaded with narrow, winding roads and tunnels looping through hilly terrain, it can be difficult for new-comers (and old timers!) to wrap their heads around the cities, suburbs and the connections inbetween.
@@ -59,7 +59,7 @@ For users with a fixed home or school location who are looking for work in Welli
 
 ![imagetitle](./imgs/petone.png?raw=true "Optional Title")
 
-### For Developers
+## For Developers
 
 Where's Wally was developed in JavaScript using the [HERE API](https://developer.here.com/), and a considerable amount of open government data, provided by [Stats NZ](https://stats.govt.nz), [Ministry of Business, Innovation and Employment](http://www.mbie.govt.nz/) (MBIE).
 
