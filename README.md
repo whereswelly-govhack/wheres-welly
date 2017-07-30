@@ -13,7 +13,7 @@
     &middot;
     <a href="https://youtube.com">Watch Our Youtube Video</a>
     &middot;
-    <a href="https://govhack.org.nz/wellington/">Vote for us on Govhack 2017</a>
+    <a href="https://govhack.org.nz/wellington/">Vote for us for Govhack 2017</a>
   </p>
 </p>
 
