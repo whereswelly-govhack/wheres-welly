@@ -29,6 +29,7 @@
 - [For Developers](#for-developers)
   - [Datasets](#datasets)
 - [Future Goals](#future-goals)
+- [Many Thanks](#many-thanks)
 - [Creators](#creators)
 
 ## Introduction
@@ -85,7 +86,7 @@ Future development goals include:
 - Adjusting the scale to match commuting preferences
 - Integrating with existing rental and house sales websites so that their information is more useful.
 
-## Thanks
+## Many Thanks
 Many thanks to the HERE team, our data contributors the folks at data.govt.nz and of course, the team at Govhack Wellington 2017. We have been kept fed and watered through a busy 46 hour period. 
 
 ## Creators
