@@ -87,7 +87,7 @@ Future development goals include:
 - Integrating with existing rental and house sales websites so that their information is more useful.
 
 ## Many Thanks
-Many thanks to the HERE team, our data contributors the folks at data.govt.nz and of course, the team at Govhack Wellington 2017. We have been kept fed and watered through a busy 46 hour period. 
+Many thanks to the HERE team, our data contributors, including the folks at data.govt.nz and of course, the team at Govhack Wellington 2017 for keeping us well fed and watered through a busy 46 hour period.
 
 ## Creators
 
