@@ -69,7 +69,7 @@ The source code is provided here with a Something-or-other License. Our datasets
 ### Datasets
 A more detailed breakdown of the datasets used is here:
 - [HERE API](https://developer.here.com/)
-  - Mapping System and iso-chrones
+  - Mapping System, iso-chrones 
 - [Stats NZ](http://m.stats.govt.nz/browse_for_stats/Maps_and_geography/Geographic-areas/digital-boundary-files.aspx)
   - New Zealand regional and area unit maps
 - [Ministry of Business, Innovation and Employment](http://www.mbie.govt.nz/info-services/housing-property/sector-information-and-statistics/rental-bond-data)
@@ -83,7 +83,10 @@ Future development goals include:
 - Adding more layers of services
 - Building on the happiness and self-assessed health scores from the Human Health Survey 
 - Adjusting the scale to match commuting preferences
-- Integrating with existing rental and house sales websites so that their information is more useful. 
+- Integrating with existing rental and house sales websites so that their information is more useful.
+
+## Thanks
+Many thanks to the HERE team, our data contributors the folks at data.govt.nz and of course, the team at Govhack Wellington 2017. We have been kept fed and watered through a busy 46 hour period. 
 
 ## Creators
 
