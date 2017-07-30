@@ -68,12 +68,14 @@ The source code is provided here with a Something-or-other License. Our datasets
 
 ### Datasets
 A more detailed breakdown of the datasets used is here:
-- HERE API
+- [HERE API](https://developer.here.com/)
   - Mapping System
-- Stats NZ
+- [Stats NZ](https://stats.govt.nz)
   - New Zealand regional and area unit maps
-- MBIE
+- [Ministry of Business, Innovation and Employment](http://www.mbie.govt.nz/)
   - Median rental costs by area unit
+- [Education Counts](http://www.educationcounts.govt.nz/data-services/directories/list-of-nz-schools)
+  - NZ School location data + additional info
 
 ## Future Goals
 Future development goals include:
