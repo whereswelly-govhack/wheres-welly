@@ -91,11 +91,31 @@ Many thanks to the HERE team, our data contributors the folks at data.govt.nz an
 
 ## Creators
 
+**Carla Morris**
+- Website design and concept work
+-
+
 **Caleb Moses**
+- Preliminary data crunching
 - <https://www.linkedin.com/in/caleb-moses-301974a6>
 - <https://github.com/mathematiguy>
 
-**Jacob Thornton**
+**Petr Pletnyakov**
+- Javascript development and GIS
+-
 
-- <https://twitter.com/fat>
-- <https://github.com/fat>
+**Tania Te Hira-Mathie**
+- GIS and data crunching
+-
+
+**Bulgan Tsogoo**
+- Film editing
+-
+
+**Ian Wang**
+- Server launch and development
+-
+
+**Jin Xie**
+-
+-
