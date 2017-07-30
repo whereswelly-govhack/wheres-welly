@@ -7,9 +7,9 @@
     Awesome travel time visualisation of Wellington, courtesy of Govhack 2017.
     <br>
     <a href="https://drive.google.com/drive/u/2/folders/0B3SjqsAKahBWd2hpeVdxYUNIUTQ">Check out our Google Drive</a>
-    &middot;
+    &nbsp; &middot; &nbsp;
     <a href="https://youtube.com">Watch Our Youtube Video</a>
-    &middot;
+    &nbsp; &middot; &nbsp;
     <a href="https://govhack.org.nz/wellington/">Vote for us on Govhack 2017</a>
   </p>
 </p>
@@ -23,10 +23,14 @@
 - [Demonstration](#demonstration)
 - [For Developers](#for-developers)
 
-## Introduction
-Wellington is a complicated city. Threaded with narrow, winding roads and tunnels looping through hilly terrain, it can be difficult for new-comers (and old timers!) to wrap their heads around the cities, suburbs and the connections inbetween.
+*Where's Welly is a tool for understanding where in the Well you are.*
 
-Where's Wally is a tool to help current and prospective Wellingtonians plan where to live and explore in the windy city. If you are planning on moving in and want somewhere close to work, you can use Where's Wally to help you find where is best for you.
+## Introduction
+Wellington is famous for its hills.  What it is less famous for is the impact those hills have on how long it takes to get around.
+
+Each road has its own personality and, with walkways and tunnels looping through the landscape, it can be difficult for new-comers (and old timers!) to wrap their heads around the layout of suburbs and the connections in between.
+
+Where's Wally helps you plan where to live, stay and explore in the windy city.  You can start with where you are and see where you can get to, or pick a destination (such as work or a swimming pool) and see where would be a good spot to live.
 
 ## Demonstration
 
