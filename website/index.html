@@ -1,0 +1,664 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>SampleHERE - MapsNZ</title>
+    <base href="http://www.mapsnz.link/" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--leaflet--------------------------------------------------------------------------->
+<link rel="stylesheet" type="text/css" href="https://js.cit.api.here.com/v3/3.0/mapsjs-ui.css" />
+<script type="text/javascript" src="https://js.cit.api.here.com/v3/3.0/mapsjs-core.js"></script>
+<script type="text/javascript" src="https://js.cit.api.here.com/v3/3.0/mapsjs-service.js"></script>
+<script type="text/javascript" src="https://js.cit.api.here.com/v3/3.0/mapsjs-ui.js"></script>
+<script type="text/javascript" src="https://js.cit.api.here.com/v3/3.0/mapsjs-mapevents.js"></script>
+    <!--jquery_and_bootstrap------------------------------------------------------------->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="f/js/moment.js"></script>
+<script src='https://npmcdn.com/@turf/turf/turf.min.js'></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/highcharts-more.js"></script>
+<script src="https://code.highcharts.com/modules/data.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet"> 
+    <!------------------------------------------------------------------------------------>
+    <style type="text/css">
+body { font-family: 'Droid Sans', serif; } 
+        .legend {
+			text-align: left;
+			line-height: 18px;
+			color: #555;
+		}
+	.legend i {
+			width: 100px;
+			height: 30px;
+			margin-right: 8px;
+			opacity: 0.75;
+		}
+         .info {
+			padding: 6px 8px;
+			background: white;
+			background: rgba(255,255,255,0.8);
+			box-shadow: 0 0 5px rgba(0,0,0,0.2);
+			border-radius: 5px;
+                }
+	.row > div{
+    }
+	.header{
+        min-height: 35px;
+      margin-bottom: 10px;
+    }
+    .footer{
+        min-height: 20px;
+    }
+    .sidebar-top{
+      min-height: 80px;
+      box-shadow: 0 0 1px rgba(0,0,0,0.2);
+      border-radius: 5px;
+padding-bottom: 5px;
+padding-left: 5px;
+padding-right: 5px;
+margin-bottom: 10px;
+text-align: center;
+    }
+    .sidebar-middle{
+margin-bottom: 10px;
+text-align: center;
+min-height: 25px; 
+border-radius: 5px;  
+      box-shadow: 0 0 1px rgba(0,0,0,0.2);
+    }
+
+    .sidebar-bottom{
+     text-align: center;
+       min-height: 145px;
+      box-shadow: 0 0 1px rgba(0,0,0,0.2);
+      border-radius: 5px;
+    }
+  
+    </style>
+</head>
+<body>
+<div class="container-fluid"><script src="f/js/rents.js"></script>
+<div class="row">
+<div class="col-md-5">
+<div class="text-center">
+<span>Travel times for areas:</span>
+<span class="label label-success">5 minutes</span>
+<span class="label label-primary">10 minutes</span>
+<span class="label label-danger">15 minutes</span>
+</div>
+<div id="map" style="height: 600px; background: grey" /></div></div>
+<div class="col-md-5"><div id="container" style="height:300px;"></div><div id="container2" style="height:300px;"></div></div>
+<div class="col-md-2 text-center"><h5>Draw proximity areas for:</h5>
+ <div class="btn-group" role="group" aria-label="...">
+  <button type="button" id="cBtn" class="btn btn-primary active">Car</button>
+  <button type="button" id="wBtn" class="btn btn-primary">Walking</button>
+</div> 
+<h5>Find better place for:</h5>
+ <div class="btn-group" role="group" aria-label="...">
+  <button type="button" id="homeBtn" class="btn btn-primary">Work</button>
+  <button type="button" id="workBtn" class="btn btn-primary active">Home</button>
+</div> 
+
+<h5>Places around:</h5>
+ <button type="button" class="btn btn-default">Cafe & restraunts<span id="cr" class="badge">0</span></button> 
+ <button type="button" class="btn btn-default">Sights and museums<span id="sm" class="badge">0</span></button> 
+ <button type="button" class="btn btn-default">Hospitals<span id="ht" class="badge">0</span></button>
+ <button type="button" class="btn btn-default">Shops<span id="sh" class="badge">0</span></button>
+ <button type="button" class="btn btn-default">ATM<span id="atm" class="badge">0</span></button>
+ <button type="button" class="btn btn-default">Entertainment<span id="ent" class="badge">0</span></button>
+</div>
+</div>
+
+<script  type="text/javascript" charset="UTF-8" >   
+
+function moveMap(){
+  map.setCenter({lat:-41.289540, lng:174.778598});
+  map.setZoom(14);
+}
+
+var colors = ['255,128,128','64,64,255','0,128,0']
+var mode = "car";
+var wantToFind = "work";
+var marker;
+var workMarkerAdded = false;
+var homeMarkerAdded = false;
+var homeCoords = '';
+var workCoords = '';
+var routingRes = [0,0,0];
+var routingDist = [0,0,0];
+var costsRes = [0,0,0];
+var routeDigit=0;
+var drag
+var dragStarted = false;
+var dragStopped = true;
+var currCenter;
+var parkCostsPw = [105,0,0];
+var petrPrice= [0.181,0,0];
+var rentVal = 0;
+
+function isolineQueryConstruct(center,range)
+{
+var url = "https://isoline.route.cit.api.here.com/routing/7.2/calculateisoline.json"+
+"?app_id=hTBiLyDOlkuXB9gO05cr"+
+"&app_code=eyawH0ZOkXv5DJDLwiorfw"+
+"&mode=fastest;"+mode+";traffic:enabled"+
+"&rangetype=time"+
+"&start=geo!"+center+
+"&range="+range;
+
+return url;
+}
+
+function placesQueryConstruct(center)
+{
+var url = "https://places.cit.api.here.com/places/v1/discover/around"+
+"?at="+center+
+"&app_id=hTBiLyDOlkuXB9gO05cr&app_code=eyawH0ZOkXv5DJDLwiorfw&cat=eat-drink,sights-museums,shopping,leisure-outdoor,petrol-station,atm-bank-exchange,hospital-health-care-facility"
+return url;
+}
+
+function isolineTransitQueryConstruct(center,rangeSec,color)
+{
+
+var range= rangeSec / 60;
+
+$.post( "index.php?id=20&c="+center +"&r="+range+"&m="+moment().format("YYYY-MM-DD") + "T"+moment().format("HH")+"%3A"+moment().format("mm")+"%3A00", function( data1 ) {
+DrawTransitIsoline(data1,color);
+});
+}
+
+var platform = new H.service.Platform({
+  app_id: 'hTBiLyDOlkuXB9gO05cr',
+  app_code: 'eyawH0ZOkXv5DJDLwiorfw',
+  useCIT: true,
+  useHTTPS: true
+});
+var defaultLayers = platform.createDefaultLayers();
+
+var map = new H.Map(document.getElementById('map'),
+  defaultLayers.normal.map);
+var iconHome = new H.map.Icon('f/img/hm.png');
+var iconWork = new H.map.Icon('f/img/wm.png');
+var behavior = new H.mapevents.Behavior(new H.mapevents.MapEvents(map));
+
+var ui = H.ui.UI.createDefault(map, defaultLayers);
+
+group = new H.map.Group();
+group1 = new H.map.Group();
+map.addObject(group); 
+map.addObject(group1);
+
+function DrawIsoline(result,color) {
+  var center = new H.geo.Point(
+    result.response.center.latitude,
+    result.response.center.longitude),
+    isolineCoords = result.response.isoline[0].component[0].shape,
+    strip = new H.geo.Strip(),
+    isolinePolygon,
+    isolineCenter;
+    isolineCoords.forEach(function(coords) {
+    strip.pushLatLngAlt.apply(strip, coords.split(','));
+  });
+
+  isolinePolygon = new H.map.Polygon(strip, {
+style: {
+        fillColor: 'rgba('+color+',0.25)',
+        strokeColor: 'rgb('+color+')',
+        lineWidth: 2
+      }
+});
+  group.addObject(isolinePolygon);
+};
+
+function DrawTransitIsoline(result,color) {
+    isolineCoords = result.Res.Isochrone.IsoDest,
+    isolineCoords.forEach(function(el) {
+  var center = new H.geo.Point(
+    result.Res.Isochrone.y,
+    result.Res.Isochrone.x)
+  });
+
+  isolineCenter = new H.map.Marker({lat:result.response.center.latitude,lon:result.response.center.longitude},{icon:iconWork});
+
+  map.addObject(isolineCenter);
+};
+
+function createIsolines(center)
+{
+
+$.post( isolineQueryConstruct(center,900), function( data ) { DrawIsoline(data, colors[0]); 
+
+$.post( isolineQueryConstruct(center,600), function( data ) { DrawIsoline(data, colors[1]); 
+
+$.post( isolineQueryConstruct(center,300), function( data ) { DrawIsoline(data, colors[2]); });
+
+});
+
+});
+}
+
+function createPlaces(center)
+{
+
+$.get(placesQueryConstruct(center),
+function( data ) { 
+CountPlaces(data); 
+}  
+
+);
+
+}
+
+function CountPlaces(data)
+{
+eatCount = 0;
+drinkCount= 0;
+sCount = 0;
+shCount = 0;
+atmCount = 0;
+hCount = 0;
+
+data.results.items.forEach(function (obj) {
+
+var res = obj.category.id;
+res = res.replace(/\-/g, "");
+if (allCats[res] == 'eat-drink') {eatCount++;}
+if (allCats[res] == 'going-out') {drinkCount++;}
+if (allCats[res] == 'sights-museums') {sCount++;}
+if (allCats[res] == 'shopping') {shCount++;}
+if (allCats[res] == 'atm-bank-exchange') {atmCount++;}
+if (allCats[res] == 'hospital') {hCount++;}
+}
+)
+$("#cr").text(eatCount);
+$("#ht").text(hCount);
+$("#sh").text(shCount);
+$("#sm").text(sCount);
+$("#atm").text(atmCount);
+$("#ent").text(drinkCount);
+
+}
+
+function addDraggableMarker(lat1,lon1,icon,myid){
+  marker = new H.map.Marker({lat:lat1, lng:lon1},{icon:icon});
+  marker.myid=myid;
+  marker.draggable = true;
+  map.addObject(marker);
+
+
+  map.addEventListener('dragstart', function(ev) {
+  
+   if (!dragStarted) {
+    var target = ev.target;
+    if (target instanceof H.map.Marker) {
+map.removeObject(group1);
+if ((target.myid == "hm") && (wantToFind == "home")) { map.removeObject(group); }
+if ((target.myid == "wm") && (wantToFind == "work")) { map.removeObject(group); }
+
+      behavior.disable();
+      dragStarted = true;
+      dragStopped = false;
+    }
+   }
+  }, false);
+
+
+  map.addEventListener('dragend', function(ev) {
+
+    if (!dragStopped) {
+    var target = ev.target;
+    if (target instanceof mapsjs.map.Marker) {
+      behavior.enable();
+      var c = target.getPosition().lat +','+ target.getPosition().lng;
+      group1 = new H.map.Group();
+      map.addObject(group1);
+      if (target.myid == "hm") { homeCoords=c; currCenter =c; getRentValue(currCenter); createPlaces(currCenter); calculateRouteFromAtoB(homeCoords,workCoords); 
+
+      if (wantToFind == "home") {
+      group = new H.map.Group();
+      map.addObject(group);
+      currCenter = target.getPosition().lat +','+ target.getPosition().lng;
+      getRentValue(currCenter);
+     createIsolines(currCenter)
+     createPlaces(currCenter);
+   }
+ }
+      if (target.myid == "wm") { workCoords=c; calculateRouteFromAtoB(workCoords,homeCoords);
+      if (wantToFind == "work") {
+      group = new H.map.Group();
+      map.addObject(group);
+      currCenter = target.getPosition().lat +','+ target.getPosition().lng;
+      createIsolines(currCenter)}  
+
+ }
+      dragStarted = false;
+      dragStopped = true;
+      }
+    }
+  }, false);
+
+   map.addEventListener('drag', function(ev) {
+    var target = ev.target,
+        pointer = ev.currentPointer;
+    if (target instanceof mapsjs.map.Marker) {
+      target.setPosition(map.screenToGeo(pointer.viewportX, pointer.viewportY));
+    }
+  }, false);
+}
+
+function setUpClickListener() {
+  map.addEventListener('tap', function (evt) {
+   if ((!workMarkerAdded) && (!homeMarkerAdded)) {
+    group = new H.map.Group();
+    map.addObject(group);
+    var coord = map.screenToGeo(evt.currentPointer.viewportX, evt.currentPointer.viewportY);
+    addDraggableMarker(coord.lat.toFixed(6),coord.lng.toFixed(6),iconWork,"wm")
+    currCenter = coord.lat.toFixed(6) + "," + coord.lng.toFixed(6);
+    createIsolines(currCenter)
+    workMarkerAdded = true;
+    workCoords=currCenter;
+     }
+  else {
+   if (!homeMarkerAdded) {
+    var coord = map.screenToGeo(evt.currentPointer.viewportX, evt.currentPointer.viewportY);
+    addDraggableMarker(coord.lat.toFixed(6),coord.lng.toFixed(6),iconHome,"hm")
+    var hc = coord.lat.toFixed(6) + "," + coord.lng.toFixed(6);
+    homeMarkerAdded = true;
+    homeCoords=hc;
+    currCenter=hc;
+    getRentValue(currCenter);
+    createPlaces(currCenter);
+    calculateRouteFromAtoB(workCoords,homeCoords);
+     }
+  }
+  });
+
+}
+
+function onSuccess(result) {
+  var route = result.response.route[0];
+  addRouteShapeToMap(route);
+  calculateAllRoutes(homeCoords,workCoords);
+}
+
+function onSuccessCalc2(result) {
+  var route = result.response.route[0];
+  routingRes[routeDigit] = Math.floor(route.summary.travelTime / 60);
+  routingDist[routeDigit] = route.summary.distance / 1000;
+  var parking =0;
+  if (checkParking(workCoords)) { parking = parkCostsPw[routeDigit]; }
+  costsRes[routeDigit] = rentVal + parking + ((route.summary.distance / 1000) * 10 * petrPrice[routeDigit]);
+  routeDigit++;
+  if (routeDigit < 3) { calculateAllRoutes(homeCoords,workCoords); } else {ReDrawGraph(); routeDigit=0;}
+}
+
+function onError(error) {
+  alert('Route not found');
+}
+
+function addRouteShapeToMap(route){
+  var strip = new H.geo.Strip(),
+    routeShape = route.shape,
+    polyline;
+
+  routeShape.forEach(function(point) {
+    var parts = point.split(',');
+    strip.pushLatLngAlt(parts[0], parts[1]);
+  });
+
+  polyline = new H.map.Polyline(strip, {
+    style: {
+      lineWidth: 4,
+      strokeColor: 'rgba(0, 128, 255, 0.7)'
+    }
+  });
+  group1.addObject(polyline);
+}
+
+$(document).ready(function() {
+moveMap(); 
+setUpClickListener();
+});
+
+//**********************************
+//INTERFACE
+//**********************************
+   $('#cBtn').on('click', function (){
+    if (mode=="pedestrian") {
+     mode="car";
+     $("#cBtn").button('toggle');
+     $("#wBtn").button('toggle');
+     map.removeObject(group);
+     group = new H.map.Group();
+     map.addObject(group);
+     if (wantToFind=="work") { createIsolines(workCoords); }
+     if (wantToFind=="home") { createIsolines(homeCoords); }
+      }
+    });
+
+   $('#wBtn').on('click', function (){
+    if (mode=="car") {
+     mode="pedestrian";
+     $("#cBtn").button('toggle');
+     $("#wBtn").button('toggle');
+     map.removeObject(group);
+     group = new H.map.Group();
+     map.addObject(group);
+     if (wantToFind=="work") { createIsolines(workCoords); }
+     if (wantToFind=="home") { createIsolines(homeCoords); }
+      }
+    });
+
+   $('#homeBtn').on('click', function (){
+    if (wantToFind=="work") {
+     wantToFind="home";
+     $("#homeBtn").button('toggle');
+     $("#workBtn").button('toggle');
+     map.removeObject(group);
+     group = new H.map.Group();
+     map.addObject(group);
+     createIsolines(homeCoords);
+      }
+    });
+
+   $('#workBtn').on('click', function (){
+    if (wantToFind=="home") {
+     wantToFind="work";
+     $("#homeBtn").button('toggle');
+     $("#workBtn").button('toggle');
+     map.removeObject(group);
+     group = new H.map.Group();
+     map.addObject(group);
+     createIsolines(workCoords);
+      }
+    });
+
+function calculateRouteFromAtoB (wp1,wp2) {
+  var router = platform.getRoutingService(),
+    routeRequestParams = {
+      mode: 'fastest;'+mode,
+      representation: 'display',
+      routeattributes : 'shape,summary',
+      maneuverattributes: 'direction,action',
+      waypoint0: wp1, 
+      waypoint1: wp2
+    };
+
+
+  router.calculateRoute(
+    routeRequestParams,
+    onSuccess,
+    onError
+  );
+}
+
+function calculateAllRoutes (wp1,wp2) {
+var routesMode=["car","bicycle","pedestrian"];
+  var router = platform.getRoutingService(),
+    routeRequestParams = {
+      mode: 'fastest;'+routesMode[routeDigit],
+      representation: 'display',
+      routeattributes : 'summary',
+      maneuverattributes: 'direction,action',
+      waypoint0: wp1, 
+      waypoint1: wp2
+    };
+
+
+  router.calculateRoute(
+    routeRequestParams,
+    onSuccessCalc2,
+    onError
+  );
+}
+
+var chart = Highcharts.chart('container', {
+    chart: {
+        type: 'column'
+    },
+    title: {
+        text: "Travel time and costs"
+    },
+    xAxis: {
+        categories: [
+            'Car',
+            'Bicycle',
+            'Walking'
+        ],
+        crosshair: true
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: 'Travel time (min)'
+        }
+    },
+    tooltip: {
+        headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+        pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+            '<td style="padding:0"><b>{point.y:.1f} min</b></td></tr>',
+        footerFormat: '</table>',
+        shared: true,
+        useHTML: true
+    },
+    plotOptions: {
+        column: {
+            pointPadding: 0.2,
+            borderWidth: 0,
+            dataLabels: {
+                enabled: true
+            }
+        }
+    },
+    series: [{ name: "Estimated travel time, min", data: [0, 0, 0] }]
+});
+
+var chart2 = Highcharts.chart('container2', {
+    chart: {
+        type: 'column'       
+    },
+    title: {
+        text: null
+    },
+    xAxis: {
+        categories: [
+            'Car',
+            'Bicycle',
+            'Walking'
+        ],
+        crosshair: true
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: 'Commuting and rent (NZD p/w)'
+        }
+    },
+    tooltip: {
+        headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+        pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+            '<td style="padding:0"><b>"$ " {point.y:.1f}</b></td></tr>',
+        footerFormat: '</table>',
+        shared: true,
+        useHTML: true
+    },
+    plotOptions: {
+        column: {
+            pointPadding: 0.2,
+            borderWidth: 0,
+            dataLabels: {
+                enabled: true,
+                format: '${y:.1f} pw'
+            }
+        }
+    },
+    series: [{ color: 'yellow', name: "Costs, NZD p/w", data: [0, 0, 0] }]
+});
+
+function ReDrawGraph()
+{
+chart.series[0].setData(routingRes);
+chart2.series[0].setData(costsRes);
+}
+
+function getRentValue(coords)
+{
+var ll = coords.split(',');
+var pt = turf.point([parseFloat(ll[1]),parseFloat(ll[0])]);
+rents.features.forEach(function(feat) {
+var isInside = turf.inside(pt, feat.geometry);
+if (isInside) { rentVal = feat.properties.Med_1Y_R;}
+});
+
+return rentVal;
+}
+
+function checkParking(coords)
+{
+var ll = coords.split(',');
+var pt = turf.point([parseFloat(ll[1]),parseFloat(ll[0])]);
+var coords1 = [ [174.770780,-41.280356],[174.794484,-41.278409],[174.784926,-41.303112],[174.765297,-41.299205],[174.770780,-41.280356] ]
+var poly1 = turf.polygon([coords1]);
+var isInside = turf.inside(pt, poly1);
+return isInside;
+}
+
+var allCats = {restaurant:'eat-drink',
+snacksfastfood:'eat-drink',
+barpub:'eat-drink',
+coffeetea:'eat-drink',
+coffee:'eat-drink',
+tea:'eat-drink',
+dancenightclub:'going-out',
+cinema:'going-out',
+theatremusicculture:'going-out',
+recreation:'going-out',
+casino:'going-out',
+landmarkattraction:'sights-museums',
+museum:'sights-museums',
+religiousplace:'sights-museums',
+kioskconveniencestore:'shopping',
+wineandliquor:'shopping',
+mall:'shopping',
+departmentstore:'shopping',
+fooddrink:'shopping',
+bookshop:'shopping',
+pharmacy:'shopping',
+electronicsshop:'shopping',
+hardwarehousegardenshop:'shopping',
+clothingaccessoriesshop:'shopping',
+sportoutdoorshop:'shopping',
+shop:'shopping',
+atmbankexchange:'atm-bank-exchange',
+hospital:'hospital',
+hospitalhealthcarefacility:'hospital' }
+
+
+  </script></div>
+</body>
+</html>
