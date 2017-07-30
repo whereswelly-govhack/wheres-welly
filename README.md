@@ -19,7 +19,7 @@
 
 ## Table of contents
 
-- [Introduction](#introduction
+- [Introduction](#introduction)
 - [Demonstration](#demonstration)
   - [Looking for Home](#lookingforhome)
   - [Looking for Work](#lookingforwork)
