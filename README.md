@@ -6,7 +6,7 @@
   <p align="center">
     Awesome travel time visualisation of Wellington, courtesy of Govhack 2017.
     <br>
-    <a href="https://whereswelly-govhack.github.io/"><strong>Visit our Website</strong></a> &middot; <a href="mapsnz.link/index.php?id=19">Try out our tool<\a> &raquo;
+    <a href="https://whereswelly-govhack.github.io/"><strong>Visit our Website</strong></a> &middot; <a href="mapsnz.link/index.php?id=19"><strong>Try out our tool</strong></a> &raquo;
     <br>
     <br>
     <a href="https://drive.google.com/drive/u/2/folders/0B3SjqsAKahBWd2hpeVdxYUNIUTQ">Check out our Google Drive</a>
