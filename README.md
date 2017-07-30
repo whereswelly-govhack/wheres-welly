@@ -11,7 +11,7 @@
     <br>
     <a href="https://drive.google.com/drive/u/2/folders/0B3SjqsAKahBWd2hpeVdxYUNIUTQ">Check out our Google Drive</a>
     &middot;
-    <a href="https://www.youtube.com/watch?v=JfIJpw-meoI">Watch Our Youtube Video</a>
+    <a href="https://youtu.be/sishONU_xsI">Watch Our Youtube Video</a>
     &middot;
     <a href="https://govhack.org.nz/wellington/">Vote for us for Govhack 2017</a>
   </p>
