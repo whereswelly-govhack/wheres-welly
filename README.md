@@ -86,10 +86,10 @@ Future development goals include:
 - Integrating with existing rental and house sales websites so that their information is more useful. 
 
 ## Creators
-**Mark Otto**
 
-- <https://twitter.com/mdo>
-- <https://github.com/mdo>
+**Caleb Moses**
+- <https://www.linkedin.com/in/caleb-moses-301974a6>
+- <https://github.com/mathematiguy>
 
 **Jacob Thornton**
 
