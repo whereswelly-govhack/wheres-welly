@@ -92,8 +92,7 @@ Many thanks to the HERE team, our data contributors, including the folks at data
 ## Creators
 
 **Carla Morris**
-- Website design and concept work
--
+- Documentation, website design and concept work
 
 **Caleb Moses**
 - Preliminary data crunching
@@ -102,20 +101,18 @@ Many thanks to the HERE team, our data contributors, including the folks at data
 
 **Petr Pletnyakov**
 - Javascript development and GIS
--
+- MapsNZ: http://mapsnz.link
 
 **Tania Te Hira-Mathie**
 - GIS and data crunching
--
+- https://www.linkedin.com/in/tania-te-hira-750361a2/
 
 **Bulgan Tsogoo**
 - Film editing
--
 
 **Ian Wang**
 - Server launch and development
--
+- Logo & images for vedio
 
 **Jin Xie**
--
--
+- researching APIs
