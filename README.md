@@ -92,7 +92,7 @@ Many thanks to the HERE team, our data contributors, including the folks at data
 ## Creators
 
 **Carla Morris**
-- Documentation, website design and concept work
+- Documhttps://www.linkedin.com/in/rachelprosser/entation, website design and concept work
 
 **Caleb Moses**
 - Data crunching and GIS work
@@ -101,7 +101,12 @@ Many thanks to the HERE team, our data contributors, including the folks at data
 
 **Petr Pletnyakov**
 - Javascript development and GIS
-- MapsNZ: http://mapsnz.link
+- Check out my data vis work at: http://mapsnz.link
+
+**Rachel Prosser**
+- Story telling, user insight, Kanban, videoing
+- https://www.linkedin.com/in/rachelprosser/
+- https://twitter.com/rachelprosser
 
 **Tania Te Hira-Mathie**
 - GIS and data crunching
