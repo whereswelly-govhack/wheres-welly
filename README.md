@@ -43,9 +43,7 @@ Users with a fixed work location who are looking for where to live can set their
 
 It is also possible to plot regions based on walking distance. If you simply want to take a walk and see how far is too far, Where's Wally will help you do that too.
 
-<img src="https://github.com/whereswelly-govhack/wheres-welly/raw/master/imgs/hataitai.png" width="300">
-
-![test](https://github.com/whereswelly-govhack/wheres-welly/raw/master/imgs/hataitai.png | width=300)
+![test](./imgs/hataitai - small.png)
 
 ### Looking for Work
 For users with a fixed home or school location who are looking for work in Wellington can set their markers like this. This way, the tool will tell you which parts of Wellington are most accessible (and cheap!) from where you live.
