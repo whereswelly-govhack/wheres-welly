@@ -27,6 +27,8 @@
   - [Looking for Home](#looking-for-home)
   - [Looking for Work](#looking-for-work)
 - [For Developers](#for-developers)
+- [Creators](#creators)
+- [Future Goals](#future-goals)
 
 ## Introduction
 Wellington is a complicated city. Threaded with narrow, winding roads and tunnels looping through hilly terrain, it can be difficult for new-comers (and old timers!) to wrap their heads around the cities, suburbs and the connections inbetween.
@@ -59,42 +61,29 @@ For users with a fixed home or school location who are looking for work in Welli
 
 ### For Developers
 
-Where's Wally was developed using the [HERE API](https://developer.here.com/)
-We love Wellington [photo of hat]  but it’s weird.[Wellington is Weird board on video]
+Where's Wally was developed in JavaScript using the [HERE API](https://developer.here.com/), and a considerable amount of open government data, provided by [Stats NZ](https://stats.govt.nz), [Ministry of Business, Innovation and Employment](http://www.mbie.govt.nz/) (MBIE).
 
-  [Gerrymander picture - stokes valley carrot]
+The source code is provided here with a Something-or-other License. Our datasets are also provided for the benefit of developers as well. They have been collected from various open data sources, and are in /data in raw and edited form.
 
-Due to its hills, layout, and public transport quirks things can be further away or closer than they seem. [images of Wellington, still face of Mckayla Maroney face]
+## Future Goals
+Future development goals include:
+- Better capturing public transport options 
+- Adding more layers of services
+- Building on the happiness and self-assessed health scores from the Human Health Survey 
+- Adjusting the scale to match commuting preferences
+- Integrating with existing rental and house sales websites so that their information is more useful. 
 
-Using the APIs from HERE  [HERE HOME PAGES]
 
-and several open data sets from MBIE, [Screen cap] Stats.NZ and Data.govt.nz [Screen cap Data.govt.nz]  
+## Creators
+**Mark Otto**
 
- we’ve created a tool that lets you pick a spot on the map and see everywhere you can get to within 5, 10, or 15 minutes.  [image, see it in work]
+- <https://twitter.com/mdo>
+- <https://github.com/mdo>
 
-You can filter by mode of transport, [show the thing]
+**Jacob Thornton**
 
- time of day, [show the thing]
-
-day of the week. [show the thing]
-
-We also provide a layer of resources which you can switch on/off to see what destinations you can reach.
-
-[Rachel- house buyer] I’ve [been trying to buy a house in Wellington and] spent hours on google maps searching travel times for properties, and even longer driving to Open Homes.  
-
-[Which is closer:Tawa or Johnsonville? [picture standing at the station looking up] 
-Ohiro Bay or Kilbirnie [picture] ? 
-Wainuiomata or Eastbourne?]  
-Where the well do you want to live?  [image #dadjoke]
-The answers may surprise you.  
-
-Current sites don’t let you search by commuting times 
-
-Some places that look good on a map actually suck to commute from [show images]. 
-
- And other places [Tawa] are underrated - and with house prices increasing fast, learning this too late is expensive [sad face Rachel looking at auction costs]. 
-
-[Renter] I’ve made the mistake of renting where I thought was close to town: only to find that buses didn’t run in the weekend [look at bus stop] - no after work movies or dance classes for me.  
+- <https://twitter.com/fat>
+- <https://github.com/fat>
 
 Our tool also can help with:
 Visitors to Wellington booking their accommodation [ask backpacker to use outside station
@@ -103,10 +92,5 @@ Retirees wanting to live where they don’t have to drive [
 Planning exercise routes [someone dressed for jogging]
 And in law enforcement [cops and robbers?]
 
-Future development goals include:
-Better capturing public transport options 
-Adding more layers of services
-Building on the happiness and self-assessed health scores from the Human Health Survey 
-Adjusting the scale to match commuting preferences
-Integrating with existing rental and house sales websites so that their information is more useful. 
+
 
