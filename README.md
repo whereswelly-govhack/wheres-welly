@@ -117,7 +117,7 @@ Many thanks to the HERE team, our data contributors, including the folks at data
 
 **Ian Wang**
 - Server launch and development
-- Logo & images for vidio
+- Logo & images for video
 
 **Jin Xie**
 - Researching APIs
