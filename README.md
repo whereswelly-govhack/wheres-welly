@@ -57,8 +57,9 @@ For users with a fixed home or school location who are looking for work in Welli
 
 ![imagetitle](./imgs/petone.png?raw=true "Optional Title")
 
-### Cost Example
+### For Developers
 
+Where's Wally was developed using the [HERE API](https://developer.here.com/)
 We love Wellington [photo of hat]  but it’s weird.[Wellington is Weird board on video]
 
   [Gerrymander picture - stokes valley carrot]
