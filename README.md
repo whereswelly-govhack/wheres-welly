@@ -65,7 +65,7 @@ For users with a fixed home or school location who are looking for work in Welli
 
 [Where's Welly](https://whereswelly-govhack.github.io/) was developed in JavaScript using the [HERE API](https://developer.here.com/), and a considerable amount of open government data, provided by [Stats NZ](https://stats.govt.nz), [Ministry of Business, Innovation and Employment](http://www.mbie.govt.nz/) (MBIE).
 
-The source code is provided here with a Something-or-other License. Our datasets are also provided for the benefit of developers as well. They have been collected from various open data sources, and are in /data in raw and edited form.
+The source code is provided here with a General Public License. Our datasets are also provided for the benefit of developers as well. They have been collected from various open data sources, and are in /data in raw and edited form.
 
 ### Datasets
 A more detailed breakdown of the datasets used is here:
